@@ -20,6 +20,7 @@ def sign_up():
             new_user = User(email=email, first_name=first_name)
             db.session.add(new_user)
             db.session.commit()
+            print("user added to database")
             flash('Account created!', category='success')
             flash('Successfully signed up!', category='success') 
             return redirect(url_for('views.home'))
