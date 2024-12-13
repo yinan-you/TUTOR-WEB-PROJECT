@@ -7,6 +7,7 @@ eoi = Blueprint('eoi', __name__)
 
 @eoi.route('/sign-up', methods=['GET', 'POST'])
 def sign_up():
+    print("HELLOEGLEOHLEHOEHLEHOELHEOHELHEOHLEHOESHLEOHELOHELHO")
     if request.method == 'POST':
         email = request.form.get('email')
         first_name = request.form.get('firstName')
@@ -19,6 +20,7 @@ def sign_up():
             # Add user to database logic here
             new_user = User(email=email, first_name=first_name)
             db.session.add(new_user)
+            print("******************")
             db.session.commit()
             print("user added to database")
             flash('Account created!', category='success')
