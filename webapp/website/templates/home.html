@@ -1,6 +1,28 @@
+{% extends "base.html" %} 
 
-{% extends "base.html" %} {%block title %}Changed{% endblock %}
+{% block title %}Homeeee{% endblock %}
 
 {% block content %}
-<h1>This is the home page </h1>
-{%endblock%}
+
+<!-- Main Section -->
+<div class="container text-center mt-5">
+  <h1 class="fw-bold display-4 mb-4">
+    Helping students reach <br /> their full potential
+  </h1>
+  <p class="lead">
+    Come to our free session at <br />
+    <strong>Dandenong Library this Saturday!</strong>
+  </p>
+
+  <!-- Email Signup Form -->
+  <div class="d-flex justify-content-center mt-4">
+    <input
+      type="email"
+      class="form-control w-25 rounded-start"
+      placeholder="Enter your email"
+      aria-label="Email"
+    />
+    <button class="btn btn-warning rounded-end fw-bold px-4">Join</button>
+  </div>
+</div>
+{% endblock %}
