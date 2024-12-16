@@ -14,9 +14,11 @@ def create_app():
 
     from .views import views
     from .eoi import eoi
+    from .join_front_page import join_front_page
 
     app.register_blueprint(views, url_prefix='/')
     app.register_blueprint(eoi, url_prefix='/')
+    app.register_blueprint(join_front_page, url_prefix='/')
 
     from website.models import User, Note
 

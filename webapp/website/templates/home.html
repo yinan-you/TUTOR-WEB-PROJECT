@@ -6,23 +6,26 @@
 
 <!-- Main Section -->
 <div class="container text-center mt-5">
-  <h1 class="fw-bold display-4 mb-4">
+  <h1 class="mt-4 mb-4">
     Helping students reach <br /> their full potential
   </h1>
-  <p class="lead">
+  <p >
     Come to our free session at <br />
     <strong>Dandenong Library this Saturday!</strong>
   </p>
 
   <!-- Email Signup Form -->
-  <div class="d-flex justify-content-center mt-4">
-    <input
-      type="email"
-      class="form-control w-25 rounded-start"
-      placeholder="Enter your email"
-      aria-label="Email"
-    />
-    <button class="btn btn-warning rounded-end fw-bold px-4">Join</button>
-  </div>
-</div>
+  <FORM method="post">
+    <div class="d-flex justify-content-center mt-4">
+      <input
+        name="email1"
+        type="email"
+        class="form-control w-25 rounded-pill"
+        placeholder="Enter your email"
+        aria-label="Email"
+      />
+      <button class="btn btn-warning rounded-pill px-3" font-family = "Rubik">Join</button>
+    </div>
+  </FORM>
+</div> 
 {% endblock %}
