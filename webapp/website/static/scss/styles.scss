@@ -1,0 +1,62 @@
+$primaryBtn:#ffaa4a;
+@font-face {
+    font-family: 'Rubik';
+    src: url('fonts/Rubik-Medium.woff2') format('woff2');
+    font-weight: 50;
+    font-style: normal;
+    font-display: swap;
+}
+html {
+    font-size: 10px; /* 1rem = 10px */
+}
+
+
+body {
+    font-size: 2rem;
+    font-family: Rubik, sans-serif;
+  }
+
+a {
+    color: black;
+    font-size: 3rem;
+    font-weight: 450;
+}
+
+button {
+    color: black;
+    background-color: #ffaa4a;
+    border: none;
+    font-size: 3rem;
+    font-weight: 500;
+}
+button2 {
+    color: black;
+    background-color: #ffaa4a;
+    border: none;
+    font-size: calc(0.4rem + 1.5vw);
+    font-weight: 500;
+}
+input {
+     border: solid;
+     font-size: calc(0.4rem + 1.5vw);
+     font-weight: 500;
+     width: 30vw;
+}
+
+h1 {
+    font-size: calc(2rem + 5vw);
+    font-weight: 500;
+}
+h2 {
+    font-size: calc(2rem + 1vw);
+    font-weight: 400;
+}
+
+
+br {
+    display: block;
+    content: "";
+    margin-top: 100rem 0;
+ }
+
+$font-size-base:              1rem;
