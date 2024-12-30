@@ -19,7 +19,7 @@ body {
 a {
     color: black;
     font-size: 3rem;
-    font-weight: 450;
+    font-weight: 40;
 }
 
 button {
@@ -29,7 +29,7 @@ button {
     font-size: 3rem;
     font-weight: 500;
 }
-button2 {
+.button2 {
     color: black;
     background-color: #ffaa4a;
     border: none;
@@ -54,9 +54,7 @@ h2 {
 
 
 br {
-    display: block;
-    content: "";
-    margin-top: 100rem 0;
- }
+    margin-top: 100rem;
+}
 
 $font-size-base:              1rem;
