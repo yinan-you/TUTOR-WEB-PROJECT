@@ -2,7 +2,7 @@ $primaryBtn:#ffaa4a;
 @font-face {
     font-family: 'Rubik';
     src: url('fonts/Rubik-Medium.woff2') format('woff2');
-    font-weight: 100;
+    font-weight: 50;
     font-style: normal;
     font-display: swap;
 }
@@ -19,7 +19,7 @@ body {
 a {
     color: black;
     font-size: 3rem;
-    font-weight: 40;
+    font-weight: 450;
 }
 
 button {
@@ -29,7 +29,7 @@ button {
     font-size: 3rem;
     font-weight: 500;
 }
-.button2 {
+button2 {
     color: black;
     background-color: #ffaa4a;
     border: none;
@@ -54,7 +54,10 @@ h2 {
 
 
 br {
-    margin-top: 100rem;
-}
+    display: block;
+    content: "";
+    margin-top: 100rem 0;
+ }
 
 $font-size-base:              1rem;
+
