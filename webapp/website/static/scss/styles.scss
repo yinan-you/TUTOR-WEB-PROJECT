@@ -19,23 +19,26 @@ body {
 a {
     color: black;
     font-size: 3rem;
-    font-weight: 450;
+    font-weight: 400;
 }
 
 button {
     color: black;
-    background-color: #ffaa4a;
+    background-color: $primaryBtn;
     border: none;
     font-size: 3rem;
     font-weight: 500;
 }
-button2 {
+
+.button-secondary {
     color: black;
-    background-color: #ffaa4a;
+    background-color: $primaryBtn;
     border: none;
     font-size: calc(0.4rem + 1.5vw);
     font-weight: 500;
-}
+  }
+
+  
 input {
      border: solid;
      font-size: calc(0.4rem + 1.5vw);
@@ -55,9 +58,8 @@ h2 {
 
 br {
     display: block;
-    content: "";
-    margin-top: 100rem 0;
+    margin-top: 1rem;
  }
 
-$font-size-base:              1rem;
+$font-size-base:1rem;
 
