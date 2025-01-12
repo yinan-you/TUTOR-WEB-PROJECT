@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Rubik";
-  src: url("fonts/Rubik-Medium.woff2") format("woff2");
+  src: url("../fonts/Rubik-Medium.ttf") format("woff2");
   font-weight: 50;
   font-style: normal;
   font-display: swap;
@@ -28,7 +28,7 @@ button {
   font-weight: 500;
 }
 
-.button-secondary {
+.btn-secondary {
   color: black;
   background-color: #ffaa4a;
   border: none;
