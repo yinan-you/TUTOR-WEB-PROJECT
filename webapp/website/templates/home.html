@@ -1,31 +1,60 @@
-{% extends "base.html" %} 
+{% extends "base.html" %}
 
 {% block title %}Home{% endblock %}
 
 {% block content %}
-
-<!-- Main Section -->
-<div class="container text-center mt-5">
-  <h1 style=" font-size: 7vw;">
-    Helping students reach <br /> their full potential
-  </h1>
-  <p class="fs-5 fs-md-4 fs-lg-3">
-    Come to our free session at <br />
-    <strong>Dandenong Library this Saturday!</strong>
-  </p>
-
-  <!-- Email Signup Form -->
-  <FORM method="post">
-    <div class="d-flex justify-content-center mt-4">
-      <input
-        name="email1"
-        type="email"
-        class="form-control w-25 rounded-pill"
-        placeholder="Enter your email"
-        aria-label="Email"
-      />
-      <button class="btn btn-warning rounded-pill px-3" font-family = "Rubik">Join</button>
+<div class="d-flex justify-content-around align-items-center mb-3" style="margin-top: 5vh;">
+    <div class="p-1 d-block">
+        <a href="#">
+            <img class="img-fluid" src="images/KFC_logo.svg"alt="KFC logo" width="100" height="75">
+        </a>
     </div>
-  </FORM>
-</div> 
+    <div class="d-none d-sm-block">
+        <a href="#">
+            How It Works
+        </a>
+    </div>
+    <div class="d-none d-md-block">
+        <a href="#">
+            Sessions
+        </a>
+    </div>
+    <div class="d-none d-lg-block">
+        <a href="#">
+            Mission
+        </a>
+    </div>
+    <div class="d-none d-xl-block">
+        <button class="rounded-pill px-5 py-3" type="submit">
+            Join Free Session
+        </button>
+    </div>
+</div>
+<div class="container-sm text-center">
+    <h1>
+        Helping students reach their full potential
+    </h1>
+</div>
+<div class="text-center"  style="margin-top: calc(10px + 4vw);">
+    <h2>
+        Come to our free session at <br />
+        <strong>Dandenong Library this Saturday!</strong>
+    </h2>
+</div>
+<form action="">
+    <div class="row justify-content-center align-items-center" style="margin-top: 5vh;">
+        <div class="col-sm-3 text-center">
+            <input 
+            type="email" 
+            class="rounded-pill px-5 py-3" 
+            id="exampleFormControlInput1" 
+            placeholder="name@example.com">
+        </div>
+        <div class="col-sm-3 text-center">
+            <button class="btn-secondary rounded-pill px-5 py-3" type="submit">
+                Join
+            </button>
+        </div>
+    </div>
+</form>
 {% endblock %}
