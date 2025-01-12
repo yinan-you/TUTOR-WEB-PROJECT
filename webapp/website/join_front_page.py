@@ -9,7 +9,8 @@ join_front_page = Blueprint('join_front_page', __name__)
 def sign_up():
     if request.method == 'POST':
         email1 = request.form.get('email1')
-         
+        print("THIS IS THE EMAIL SUBMITTED")
+        print(email1)
         if len(email1) < 4:
             flash('Email must be at least 4 characters long.', category='error')
         else:
