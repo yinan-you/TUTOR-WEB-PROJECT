@@ -63,3 +63,24 @@ br {
 
 $font-size-base:1rem;
 
+section {
+    height: 100vh; /* Each section takes the full viewport height */
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+}
+section:nth-child(odd) {
+    background: #f4f4f4;
+}
+section:nth-child(even) {
+    background: #ddd;
+}
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    background-color: white; /* Matches the background */
+    z-index: 1030; /* Ensures it stays above other elements */
+}

@@ -3,24 +3,24 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<div class="d-flex justify-content-around align-items-center mb-3" style="margin-top: 5vh;">
+<div class="d-flex justify-content-around align-items-center mb-3 sticky-top" style="margin-top: 5vh;">
     <div class="p-1 d-block">
         <a href="#">
             <img class="img-fluid" src="../static/images/KFC_logo.svg"alt="KFC logo" width="100" height="75">
         </a>
     </div>
     <div class="d-none d-sm-block">
-        <a href="#">
+        <a href="#How It Works">
             How It Works
         </a>
     </div>
     <div class="d-none d-md-block">
-        <a href="#">
+        <a href="#Sessions">
             Sessions
         </a>
     </div>
     <div class="d-none d-lg-block">
-        <a href="#">
+        <a href="#Mission">
             Mission
         </a>
     </div>
@@ -58,4 +58,15 @@
         </div>
     </div>
 </form>
+
+<section id="How It Works">
+    <img class="img-fluid" src="../static/images/KFC_logo.svg"alt="KFC logo" width="500" height="500">
+</section>
+<section id="Sessions">
+    <img class="img-fluid" src="../static/images/blackkid.jpg"alt="blackkid" width="500" height="500">
+</section>
+<section id="Mission">
+    <h1>Mission</h1>
+</section>
+
 {% endblock %}
