@@ -1,87 +1,84 @@
-$primaryBtn:#ffaa4a;
+$primaryBtn: #ffaa4a;
 @font-face {
-    font-family: 'Rubik';
-    src: url('../fonts/Rubik-Medium.ttf') format('woff2');
-    font-weight: 50;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Medium.ttf") format("woff2");
+  font-weight: 50;
+  font-style: normal;
+  font-display: swap;
 }
 html {
-    font-size: 10px; /* 1rem = 10px */
+  font-size: 10px; /* 1rem = 10px */
 }
 
-
 body {
-    font-size: 2rem;
-    font-family: Rubik, sans-serif;
-  }
+  font-size: 2rem;
+  font-family: Rubik, sans-serif;
+}
 
 a {
-    color: black;
-    font-size: 3rem;
-    font-weight: 400;
-    text-decoration: none
+  color: black;
+  font-size: 3rem;
+  font-weight: 400;
+  text-decoration: none;
 }
 
 button {
-    color: black;
-    background-color: $primaryBtn;
-    border: none;
-    font-size: 3rem;
-    font-weight: 500;
+  color: black;
+  background-color: $primaryBtn;
+  border: none;
+  font-size: 3rem;
+  font-weight: 500;
 }
 
 .btn-secondary {
-    color: black;
-    background-color: $primaryBtn;
-    border: none;
-    font-size: calc(0.4rem + 1.5vw);
-    font-weight: 500;
-  }
+  color: black;
+  background-color: $primaryBtn;
+  border: none;
+  font-size: calc(0.4rem + 1.5vw);
+  font-weight: 500;
+}
 
-  
 input {
-     border: solid;
-     font-size: calc(0.4rem + 1.5vw);
-     font-weight: 500;
-     width: 30vw;
+  border: solid;
+  font-size: calc(0.4rem + 1.5vw);
+  font-weight: 500;
+  width: 30vw;
 }
 
 h1 {
-    font-size: calc(2rem + 5vw);
-    font-weight: 500;
+  font-size: calc(2rem + 5vw);
+  font-weight: 500;
 }
 h2 {
-    font-size: calc(2rem + 1vw);
-    font-weight: 400;
+  font-size: calc(2rem + 1vw);
+  font-weight: 400;
 }
-
 
 br {
-    display: block;
-    margin-top: 1rem;
- }
+  display: block;
+  margin-top: 1rem;
+}
 
-$font-size-base:1rem;
+$font-size-base: 1rem;
 
 section {
-    height: 100vh; /* Each section takes the full viewport height */
-    padding: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 1px solid #ccc;
+  height: 100vh; /* Each section takes the full viewport height */
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
 }
 section:nth-child(odd) {
-    background: #f4f4f4;
+  background: #f4f4f4;
 }
 section:nth-child(even) {
-    background: #ddd;
+  background: #ddd;
 }
 
 .sticky-top {
-    position: sticky;
-    top: 0;
-    background-color: white; /* Matches the background */
-    z-index: 1030; /* Ensures it stays above other elements */
+  position: sticky;
+  top: 0;
+  background-color: white; /* Matches the background */
+  z-index: 1030; /* Ensures it stays above other elements */
 }
