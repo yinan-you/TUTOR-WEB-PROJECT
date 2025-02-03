@@ -62,7 +62,6 @@ br {
 section {
   height: 100vh; /* Each section takes the full viewport height */
   padding: 50px;
-  display: flex;
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid #ccc;
@@ -81,6 +80,20 @@ section:nth-child(even) {
   top: 0;
   background-color: white; /* Matches the background */
   z-index: 1030; /* Ensures it stays above other elements */
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.element {
+  animation: slide-in 1s ease-out;
 }
 
 /*# sourceMappingURL=styles.css.map */
