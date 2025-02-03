@@ -8,4 +8,6 @@ gsap.from(".box", {
     trigger: ".box",
     start: "top 80%", // Starts animation when top of .box reaches 80% of viewport
     end: "top 30%", // Ends at 30% of viewport
-    scrub: true, // Smoot
+    scrub: true, // Smooth animation while scrolling
+  },
+});
