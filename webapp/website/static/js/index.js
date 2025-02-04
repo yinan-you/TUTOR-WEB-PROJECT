@@ -1,28 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from(".box", {
-  opacity: 0,
-  y: 100,
-  duration: 1,
-  scrollTrigger: {
-    trigger: ".box",
-    start: "top 80%", // Starts animation when top of .box reaches 80% of viewport
-    end: "top 30%", // Ends at 30% of viewport
-    scrub: true, // Smooth animation while scrolling
-  },
-});
-
-gsap.to(".background", {
-  yPercent: 50, // Moves the background down 50% as you scroll
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".parallax-wrapper",
-    start: "top top", // Start when the top of the parallax container reaches the top of the viewport
-    end: "bottom top", // End when the bottom of the parallax container reaches the top of the viewport
-    scrub: true, // Smooth scroll effect
-  },
-});
-
 gsap.to(".scroll-circle", {
   scrollTrigger: {
     trigger: ".scroll-circle", // Element that triggers the animation
