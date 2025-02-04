@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG Line Drawing on Scroll</title>
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 200vh; /* Extra height to allow scrolling */
+        background-color: #f0f0f0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      svg {
+        width: 80%;
+        height: 300px;
+        border: 1px solid #ccc;
+        background: white;
+      }
+
+      path {
+        fill: none;
+        stroke: #ff5733;
+        stroke-width: 4;
+        stroke-linecap: round;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Scroll to Draw the Line</h2>
+
+    <svg viewBox="0 0 500 300">
+      <!-- Example Path (a simple wave) -->
+      <path id="line" d="M20,150 Q150,50 280,150 T480,150" />
+    </svg>
+
+    <script>
+      // Register the ScrollTrigger plugin
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Select the path
+      const path = document.getElementById("line");
+      const pathLength = path.getTotalLength(); // Get the total length of the path
+
+      // Set the initial dash array and offset to hide the path
+      path.style.strokeDasharray = pathLength;
+      path.style.strokeDashoffset = pathLength;
+
+      // GSAP Animation for drawing the line on scroll
+      gsap.to(path, {
+        strokeDashoffset: 0, // Draw the path from start to end
+        ease: "power1.inOut",
+        scrollTrigger: {
+          trigger: path, // Trigger the animation when the path enters the viewport
+          start: "top 80%", // Animation starts when the top of the path hits 80% of the viewport
+          end: "bottom 20%", // Animation ends when the bottom of the path hits 20% of the viewport
+          scrub: true, // Smooth, scrubbed animation as you scroll
+          markers: true, // Debug markers to visualize start and end points (remove when done)
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -12,28 +12,22 @@ gsap.to(".scroll-circle", {
   ease: "power1.inOut",
 });
 
-const text = document.getElementById("drawText"); // Make sure this matches the ID in your HTML
+const letters = document.querySelectorAll(".letter");
 
-if (text) {
-  const length = text.getTotalLength(); // Get the total length of the stroke
+letters.forEach((letter) => {
+  const length = letter.getTotalLength();
+  letter.style.strokeDasharray = length;
+  letter.style.strokeDashoffset = length;
 
-  // Set initial stroke state
-  text.style.strokeDasharray = length;
-  text.style.strokeDashoffset = length;
-
-  // Animate stroke dashoffset on scroll
-  gsap.to(text, {
+  gsap.to(letter, {
+    strokeDashoffset: 0,
+    ease: "power1.inOut",
     scrollTrigger: {
-      trigger: "#drawText", // Element to trigger the animation
-      start: "top 75%", // Trigger when top of element is 75% from the top of viewport
-      end: "bottom top", // End the animation when the bottom of the element reaches the top of the viewport
-      scrub: true, // Make the animation scrubbable with scroll
-      markers: true, // Show markers for debugging (remove this when not needed)
+      trigger: letter,
+      start: "top 70%", // Start drawing earlier
+      end: "top 20%", // Finish faster
+      scrub: 0.5, // Faster scrub (lower = quicker)
+      markers: false,
     },
-    strokeDashoffset: 0, // Animate stroke to 0 (fully drawn)
-    duration: 2, // Duration of the animation
-    ease: "power1.inOut", // Ease for smooth animation
   });
-} else {
-  console.error("Text element not found");
-}
+});
