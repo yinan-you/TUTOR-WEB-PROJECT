@@ -115,4 +115,10 @@ svg {
   height: 90vw;
 }
 
+#drawText {
+  fill: transparent;
+  stroke: #000;
+  stroke-width: 2;
+}
+
 /*# sourceMappingURL=styles.css.map */
