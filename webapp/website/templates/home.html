@@ -1,8 +1,8 @@
 {% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
 %}
 <div
-  class="d-flex justify-content-around align-items-center mb-3 sticky-top"
-  style="margin-top: 5vh"
+  class="d-flex justify-content-around align-items-center sticky-top"
+  style="margin-top: 5vh; margin-bottom: 10vh"
 >
   <div class="p-1 d-block">
     <a href="#">
@@ -33,7 +33,9 @@
   </div>
 </div>
 <div class="container-sm text-center">
-  <h1>Helping students reach their full potential</h1>
+  <h1 style="margin-bottom: 10vh">
+    Helping students reach their full potential
+  </h1>
 </div>
 <div class="text-center" style="margin-top: calc(10px + 4vw)">
   <h2>
@@ -49,13 +51,13 @@
     <div class="col-sm-3 text-center">
       <input
         type="email"
-        class="rounded-pill px-5 py-3"
+        class="rounded-pill px-10 py-3 custom-width-xs"
         id="email"
         name="email1"
         placeholder="name@example.com"
       />
     </div>
-    <div class="col-sm-3 text-center">
+    <div class="col-sm-3 text-center mt-3">
       <button class="btn-secondary rounded-pill px-5 py-3" type="submit">
         Join
       </button>

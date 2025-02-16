@@ -96,4 +96,10 @@ section:nth-child(even) {
   animation: slide-in 1s ease-out;
 }
 
+@media (max-width: 576px) {
+  .custom-width-xs {
+    width: 35% !important; /* 80% width on extra-small screens */
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
