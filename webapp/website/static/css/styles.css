@@ -33,13 +33,13 @@ button {
   color: black;
   background-color: #ffaa4a;
   border: none;
-  font-size: calc(0.4rem + 1.5vw);
+  font-size: 1.7rem;
   font-weight: 500;
 }
 
 input {
   border: solid;
-  font-size: calc(0.4rem + 1.5vw);
+  font-size: 1.7rem;
   font-weight: 500;
   width: 30vw;
 }
